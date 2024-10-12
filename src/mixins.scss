@@ -85,21 +85,22 @@
         &.left{
             background: white;
             width: 500px;
-            height: 100vh;
+            min-height: 100vh;
         }
         &.right{
             background: #3ac1df69;
             width: calc(100% - 500px);
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
-            align-items: center;
             justify-content: center;
+            padding: 40px 0 40px;
 
             .content{
                 background: #fff;
                 width: calc(100% - 100px);
-                // margin: 0 0 0 50px;
                 max-width: 900px;
+                height: fit-content;
+                border-radius: 10px;
             }
         }
     }

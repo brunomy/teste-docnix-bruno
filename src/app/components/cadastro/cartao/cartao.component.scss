@@ -1,0 +1,28 @@
+@import './../../../../mixins.scss';
+
+h2{
+    @include form_title;
+}
+
+.content{
+    @include form_content;
+
+    .left{
+        button.adicionar{
+            background: #123a43;
+            border: none;
+            color: white;
+            width: 100%;
+            padding: 15px 0;
+            font-size: 11px;
+            border-radius: 5px;
+        }
+    }
+    .right{
+        display: flex;
+
+        >div{
+            width: calc((100% - 10px) / 2);
+        }
+    }
+}
