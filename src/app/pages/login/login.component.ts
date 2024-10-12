@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { LoginLayoutComponent } from '../../components/login-layout/login-layout.component';
+import { Router } from '@angular/router'
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [LoginLayoutComponent],
+  imports: [NgIf],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-
+  constructor(private router: Router){
+  }
 }

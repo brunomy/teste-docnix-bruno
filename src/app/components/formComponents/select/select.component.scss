@@ -1,0 +1,12 @@
+@import './../../../../mixins.scss';
+
+.select_content{
+    @include inputStyle;
+    
+    .selectStyle{
+        select{
+            height: 49px;
+            padding: 12px 15px 0;
+        }
+    }
+}

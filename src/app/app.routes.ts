@@ -11,4 +11,8 @@ export const routes: Routes = [
         path: "cadastro",
         component: CadastroComponent
     },
+    {
+        path: "cadastro-endereco",
+        component: CadastroComponent
+    },
 ];

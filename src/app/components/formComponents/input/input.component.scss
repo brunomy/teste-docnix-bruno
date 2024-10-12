@@ -1,0 +1,12 @@
+@import './../../../../mixins.scss';
+
+.input_content{
+    @include inputStyle;
+    
+    .inputStyle{
+        input{
+            height: 49px;
+            padding: 12px 15px 0;
+        }
+    }
+}

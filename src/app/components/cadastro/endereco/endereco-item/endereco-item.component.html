@@ -1,0 +1,15 @@
+<div class="end_item" [class.principal]="principal">
+    <div class="info">
+        <p>CEP: <span>74580-340</span></p>
+        <p>Rua: <span>Sp12</span></p>
+        <p>Número: <span>0</span></p>
+        <p>Complemento: <span>Q.09 Lt.09</span></p>
+        <p>Cidade: Goiânia</p>
+        <p>Estado: GO</p>
+    </div>
+    <div class="action">
+        <button class="principal" *ngIf="!principal">Endereço principal</button>
+        <button class="deletar">Deletar</button>
+    </div>
+</div>
+

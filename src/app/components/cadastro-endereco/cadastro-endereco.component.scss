@@ -1,0 +1,45 @@
+@import './../../../mixins.scss';
+
+.cadastro-endereco{
+    >div{
+        padding: 25px;
+
+        h2{
+            @include form_title;
+        }
+
+        .content{
+            @include form_content;
+            .left{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                button{
+                    border: none;
+                    width: 100%;
+                    padding: 15px 0;
+                    font-size: 11px;
+                    border-radius: 5px;
+                    color: white;
+
+                    &.adicionar{
+                        background: #123a43;
+                    }
+                    &.voltar{
+                        background: #eb5628;
+                    }
+                }
+            }
+            .right{
+                div{
+                    width: 100%;
+
+                    &.half{
+                        width: calc((100% - 10px) / 2);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,12 +1,22 @@
 import { Component } from '@angular/core';
+import { CadastroContentComponent } from '../../components/cadastro/cadastro-content.component';
+import { NgIf } from '@angular/common';
+import { Router } from '@angular/router';
+import { CadastroEnderecoComponent } from '../../components/cadastro-endereco/cadastro-endereco.component';
 
 @Component({
   selector: 'app-cadastro',
   standalone: true,
-  imports: [],
+  imports: [CadastroContentComponent, CadastroEnderecoComponent, NgIf],
   templateUrl: './cadastro.component.html',
   styleUrl: './cadastro.component.scss'
 })
 export class CadastroComponent {
+  url: string = '';
 
+  constructor(public router: Router ) {
+    this.url = router.url;
+    console.log(this.url);
+    
+  }
 }

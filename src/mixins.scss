@@ -1,0 +1,106 @@
+@mixin form_title {
+    color: #123a43;
+    font-size: 16px;
+    margin: 20px 0 15px;
+}
+
+@mixin inputStyle {
+    position: relative;
+    border-radius: 5px;
+
+    input, select, textarea{
+        width: 100%;
+        border-radius: 5px;
+        font-size: 13px;
+        border: 2px solid #3ac1df;
+
+        &.invalid{
+            border-color: #eb5628 !important;
+            + label{
+                background: #eb5628 !important;
+            }
+        }
+
+        &:focus-visible{
+            outline: none;
+        }
+
+        &:focus{
+            border-color: #0087a5;
+
+            + label{
+                background: #0087a5;
+            }
+        }
+
+        &:not(:focus):not(.cheio){
+            + label{
+                height: 100%;
+                width: 100%;
+                font-size: 11px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    label{
+        position: absolute;
+        pointer-events: none;
+        font-size: 10px;
+        background: #3ac1df;
+        color: white;
+        font-weight: bold;
+        transition: all .1s;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        padding: 2px 15px;
+        height: 18px;
+        border-radius: 5px 0 5px 0;
+        width: fit-content;
+    }
+}
+
+@mixin form_content {
+    display: flex;
+    justify-content: space-between;
+
+    .left{
+        width: 110px;
+    }
+    .right{
+        width: calc(100% - 130px);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+@mixin page_style {
+    display: flex;
+
+    section{
+        &.left{
+            background: white;
+            width: 500px;
+            height: 100vh;
+        }
+        &.right{
+            background: #3ac1df69;
+            width: calc(100% - 500px);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .content{
+                background: #fff;
+                width: calc(100% - 100px);
+                // margin: 0 0 0 50px;
+                max-width: 900px;
+            }
+        }
+    }
+}

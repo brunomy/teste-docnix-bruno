@@ -1,0 +1,7 @@
+<div class="input_content">
+    <div class='inputStyle'>
+        <input [(ngModel)]="valor" type="text" class="myInput" [class.cheio]="valor" [class.invalid]="invalid" name="" (change)="validacao()" />
+        <label *ngIf="!invalid">{{label}}</label>
+        <label *ngIf="invalid">{{label}} inválido</label>
+    </div>
+</div>

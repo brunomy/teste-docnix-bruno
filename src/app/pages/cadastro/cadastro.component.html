@@ -1,5 +1,12 @@
-<div class="cadastro">
-    <div class="content">
-        
-    </div>
-</div>
+<main>
+    <section class="left">
+        <div class="content">
+        </div>
+    </section>
+    <section class="right">
+        <div class="content">
+            <app-cadastro-content *ngIf="url === '/cadastro'"/>
+            <app-cadastro-endereco *ngIf="url === '/cadastro-endereco'"/>
+        </div>
+    </section>
+</main>
