@@ -2,6 +2,10 @@
     color: #123a43;
     font-size: 16px;
     margin: 20px 0 15px;
+
+    @media (max-width: 500px){
+        font-size: 14px;
+    }
 }
 
 @mixin inputStyle {
@@ -65,6 +69,7 @@
 @mixin form_content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .left{
         width: 110px;
@@ -76,6 +81,15 @@
         flex-wrap: wrap;
         gap: 10px;
     }
+
+    @media (max-width: 500px){
+        .left{
+            margin: 0 0 15px;
+        }
+        .right{
+            width: 100%;
+        }
+    }
 }
 
 @mixin page_style {
@@ -84,12 +98,12 @@
     section{
         &.left{
             background: white;
-            width: 500px;
+            width: 400px;
             min-height: 100vh;
         }
         &.right{
             background: #3ac1df69;
-            width: calc(100% - 500px);
+            width: calc(100% - 400px);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -101,6 +115,26 @@
                 max-width: 900px;
                 height: fit-content;
                 border-radius: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 1000px){
+        section{
+            &.left{
+                display: none;
+            }
+            &.right{
+                width: 100%;
+            }
+        }
+    }
+    @media (max-width: 750px){
+        section{
+            &.right{
+                .content{
+                    width: calc(100% - 40px);
+                }
             }
         }
     }
