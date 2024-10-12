@@ -43,3 +43,40 @@
         }
     }
 }
+
+@media (max-width: 600px){
+    .cadastro-endereco{
+        >div{
+            h2{
+            }
+    
+            .content{
+                .left{
+                    width: 100%;
+                    order: 2;
+                    flex-direction: row;
+                    margin: 10px 0 0;
+
+                    button{
+                        &.adicionar{
+                            order: 2;
+                        }
+                        &.voltar{
+                            order: 1;
+                        }
+                    }
+                }
+                .right{
+                    width: 100%;
+                    order: 1;
+
+                    div{
+                        &.half{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
