@@ -81,4 +81,78 @@
             }
         }
     }
+
+}
+
+@media (max-width: 1250px){
+    .cadastro-cartao{
+        >div{
+            .content{
+                .dados{
+                    .top{
+                        div{
+                            &.half{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1100px){
+    .cadastro-cartao{
+        >div{
+            .content{
+                flex-wrap: wrap;
+
+                .cartao{
+                    margin: 0 0 30px;
+                }
+                .dados{
+                    width: 100%;
+                    .top{
+                        div{
+                            &.half{
+                                width: calc((100% - 10px) / 2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 500px){
+    .cadastro-cartao{
+        >div{
+            h2{
+            }
+    
+            .content{
+                .cartao{
+                    img{
+                    }
+                    .numero{
+                        span{
+                        }
+                    }
+                }
+                .dados{
+                    .top{
+                        div{
+                            &.half{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .bottom{
+                        button{
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
