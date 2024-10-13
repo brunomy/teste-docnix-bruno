@@ -20,13 +20,33 @@ main{
                 color: #4b009d;
                 margin: 0 0 20px;
             }
+            h2{
+                font-weight: 100;
+                font-size: 23px;
+                margin: 0 0 25px;
+                color: #3ac1df;
+
+                span{
+                    color: #4b009d;
+                    font-weight: bold;
+                }
+            }
             .progress{
                 margin: 0 0 30px;
             }
             p{
-                font-weight: bold;
-                font-size: 15px;
-                color: #4b009d;
+                font-size: 18px;
+                color: #3ac1df;
+
+                b{
+                    color: #4b009d;
+                }
+
+                span{
+                    color: #4b009d;
+                    font-weight: bold;
+                }
+
             }
         }
     }

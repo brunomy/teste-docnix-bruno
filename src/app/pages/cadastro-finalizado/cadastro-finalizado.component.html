@@ -4,12 +4,12 @@
             <h1>Analise de credito</h1>
             <div class="dados">
                 <div class="img">
-                    <app-img-file />
+                    <app-img-file [valor]="pessoa.getFoto()" />
                 </div>
-                <p>Bruno Yosimura</p>
-                <p>700.929.331-72</p>
+                <p>{{ pessoa.getNome() }} {{ pessoa.getSobrenome() }}</p>
+                <p>{{ pessoa.getCPF() }}</p>
             </div>
-            <button>Fazer análise</button>
+            <button (click)="submit('/analise')">Fazer análise</button>
         </div>
     </section>
     <section class="right">

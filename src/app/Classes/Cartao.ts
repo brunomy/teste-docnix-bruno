@@ -1,5 +1,6 @@
 export class Cartao {
     private id: number;
+    private id_pessoa: number;
     private numero: string;
     private nome: string;
     private vencimento: string;
@@ -7,12 +8,14 @@ export class Cartao {
 
     constructor(
         id: number = 0,
+        id_pessoa: number = 0,
         numero: string = '',
         nome: string = '',
         vencimento: string = '',
         crv: string = ''
     ){
         this.id = id;
+        this.id_pessoa = id_pessoa;
         this.numero = numero;
         this.nome = nome;
         this.vencimento = vencimento;

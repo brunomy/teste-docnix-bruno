@@ -11,13 +11,16 @@
         padding: 15px 15px;
         width: 100%;
         display: flex;
-        flex-direction: column;
         gap: 5px;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
         p{
+            display: block;
             font-size: 14px;
             color: #ffffff;
             line-height: 19px;
+            width: calc((100% - 10px) / 2);
 
             span{
                 background: white;

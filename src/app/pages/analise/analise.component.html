@@ -2,11 +2,13 @@
     <section class="right">
         <div class="content">
             <h1>Análise de crédito</h1>
+            <h2>Seu Score é <span>{{ pessoa.getScore() }}</span></h2>
             <div class="progress">
                 <app-progress-bar [porcentagem]="porcentagem" />
             </div>
-            <p *ngIf="porcentagem < 50">A sua análise foi <span>reprovada</span></p>
-            <p *ngIf="porcentagem > 50">A sua análise foi <span>aprovada</span></p>
+            <p *ngIf="porcentagem < 50">O CPF: <b>{{ pessoa.getCPF() }}</b> está <span>inapto</span> para aprovação do cadastro.</p>
+            <p *ngIf="porcentagem >= 50 && porcentagem < 80">O CPF: <b>{{ pessoa.getCPF() }}</b> está <span>apto com limitações</span> para aprovação do cadastro.</p>
+            <p *ngIf="porcentagem >= 80">O CPF: <b>{{ pessoa.getCPF() }}</b> está <span>totalmente apto</span> para aprovação do cadastro.</p>
         </div>
     </section>
 </main>

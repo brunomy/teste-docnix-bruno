@@ -9,7 +9,7 @@ export class Pessoa {
     private CPF: string;
     private nomeDaEmpresa: string;
     private cargo: number;
-    private credito: number;
+    private score: number;
 
     constructor(
         id: number = 0,
@@ -22,7 +22,7 @@ export class Pessoa {
         CPF: string = '',
         nomeDaEmpresa: string = '',
         cargo: number = 0,
-        credito: number = 0
+        score: number = 0
     ) {
         this.id = id;
         this.foto = foto;
@@ -34,7 +34,7 @@ export class Pessoa {
         this.CPF = CPF;
         this.nomeDaEmpresa = nomeDaEmpresa;
         this.cargo = cargo;
-        this.credito = credito;
+        this.score = score;
     }
 
     // Getters
@@ -77,10 +77,10 @@ export class Pessoa {
     getCargo(): number {
         return this.cargo;
     }
-
-    getCredito(): number {
-        return this.credito;
+    getScore(): number{
+        return this.score;
     }
+
 
     // Setters
     setFoto(foto: string): void {
@@ -119,7 +119,7 @@ export class Pessoa {
         this.cargo = Number(cargo);
     }
 
-    setCredito(credito: number): void {
-        this.credito = credito;
+    setScore(score: number) : void {
+        this.score = score;
     }
 }
