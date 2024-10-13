@@ -12,9 +12,9 @@
     <section class="right">
 
         <div class="content">
-            <app-cadastro-content [pessoa]="pessoa" [endereco]="endereco" *ngIf="url === '/cadastro'"/>
+            <app-cadastro-content [pessoa]="pessoa" [endereco]="endereco" [cartao]="cartao" *ngIf="url === '/cadastro'"/>
             <app-cadastro-endereco [endereco]="endereco" *ngIf="url === '/cadastro/endereco'"/>
-            <app-cadastro-cartao *ngIf="url === '/cadastro/cartao'"/>
+            <app-cadastro-cartao [cartao]="cartao" *ngIf="url === '/cadastro/cartao'"/>
         </div>
     </section>
 </main>

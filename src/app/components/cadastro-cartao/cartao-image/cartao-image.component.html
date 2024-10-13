@@ -1,11 +1,11 @@
 <div>
     <img src="./../../../../assets/cartao.png" alt="">
     <div class="numero">
-        <span>5692</span>
-        <span>4520</span>
-        <span>4587</span>
-        <span>0145</span>
+        <span>{{ cartao.getNumero().substring(0, 4) }}</span>
+        <span>{{ cartao.getNumero().substring(4, 8) }}</span>
+        <span>{{ cartao.getNumero().substring(8, 12) }}</span>
+        <span>{{ cartao.getNumero().substring(12, 16) }}</span>
     </div>
-    <div class="vencimento">11/2040</div>
-    <div class="nome">Bruno Macaharu Yosimura</div>
+    <div class="vencimento">{{ cartao.getVencimento ()}}</div>
+    <div class="nome">{{ cartao.getNome() }}</div>
 </div>

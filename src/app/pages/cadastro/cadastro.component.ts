@@ -9,6 +9,7 @@ import { LogoComponent } from '../../components/animacoes/logo/logo.component';
 import { Pessoa } from '../../Classes/Pessoa';
 import { Endereco } from '../../Classes/Endereco';
 import { StorageService } from '../../storage.service';
+import { Cartao } from '../../Classes/Cartao';
 
 @Component({
   selector: 'app-cadastro',
@@ -21,22 +22,26 @@ export class CadastroComponent implements OnInit {
   url: string = '';
   pessoa: Pessoa = new Pessoa();
   endereco: Endereco = new Endereco();
+  cartao: Cartao = new Cartao()
 
   constructor(public router: Router, private storage: StorageService) {
     this.url = router.url;
   }
 
   ngOnInit(): void {
-    if(this.storage.getPessoa()){
+    if(this.storage.getPessoa())
       this.pessoa = this.storage.getPessoa();
-    }
-    else{
+    else
       this.pessoa = new Pessoa();
-    }
 
     if(this.storage.getEndereco())
       this.endereco = this.storage.getEndereco();
     else
       this.endereco = new Endereco();
+
+    if(this.storage.getCartao())
+      this.cartao = this.storage.getCartao();
+    else
+      this.cartao = new Cartao();
   }
 }

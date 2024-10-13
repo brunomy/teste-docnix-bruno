@@ -11,7 +11,7 @@ export class Endereco {
     constructor(
         id: number = 0,
         id_pessoa: number = 0,
-        CEP: string = 'asda',
+        CEP: string = '',
         rua: string = '',
         numero: string = '',
         complemento: string = '',

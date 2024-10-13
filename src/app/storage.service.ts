@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Pessoa } from './Classes/Pessoa';
 import { Endereco } from './Classes/Endereco';
+import { Cartao } from './Classes/Cartao';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,7 @@ import { Endereco } from './Classes/Endereco';
 export class StorageService {
   private pessoa!: Pessoa;
   private endereco!: Endereco;
+  private cartao!: Cartao;
 
   constructor() { }
 
@@ -17,6 +19,9 @@ export class StorageService {
   setEndereco(endereco: Endereco) : void {
     this.endereco = endereco;
   }
+  setCartao(cartao: Cartao) : void {
+    this.cartao = cartao;
+  }
 
   getPessoa() : Pessoa {
     return this.pessoa;
@@ -24,4 +29,8 @@ export class StorageService {
   getEndereco() : Endereco {
     return this.endereco;
   }
+  getCartao() : Cartao {
+    return this.cartao;
+  }
+
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
+import { Cartao } from '../../../Classes/Cartao';
 
 @Component({
   selector: 'app-cartao-image',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './cartao-image.component.scss'
 })
 export class CartaoImageComponent {
-
+  @Input() cartao!: Cartao;
 }

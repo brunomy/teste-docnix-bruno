@@ -3,26 +3,26 @@
         <h2>Cadastrar novo cartão:</h2>
         <div class="content">
             <div class="cartao">
-                <app-cartao-image />
+                <app-cartao-image [cartao]="cartao" />
             </div>
 
             <div class="dados">
                 <div class="top">
                     <div class="half">
-                        <app-input [label]="'Número do cartão'" />
+                        <app-input [valor]="cartao.getNumero()" (valorEmitt)="cartao.setNumero($event)" [label]="'Número do cartão'" />
                     </div>
                     <div class="half">
-                        <app-input [label]="'Nome completo'" />
+                        <app-input [valor]="cartao.getNome()" (valorEmitt)="cartao.setNome($event)" [label]="'Nome completo'" />
                     </div>
                     <div class="half">
-                        <app-input [label]="'Vencimento'" />
+                        <app-input [valor]="cartao.getVencimento()" (valorEmitt)="cartao.setVencimento($event)" [label]="'Vencimento'" />
                     </div>
                     <div class="half">
-                        <app-input [label]="'CRV'" />
+                        <app-input [valor]="cartao.getCrv()" (valorEmitt)="cartao.setCrv($event)" [label]="'CRV'" />
                     </div>
                 </div>
                 <div class="bottom">
-                    <button class="adicionar">Salvar</button>
+                    <button class="adicionar" (click)="submit('/cadastro')">Salvar</button>
                 </div>
             </div>
         </div>

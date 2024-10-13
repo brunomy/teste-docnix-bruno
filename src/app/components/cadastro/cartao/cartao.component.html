@@ -1,11 +1,11 @@
 <h2>Cartão:</h2>
 <div class="content">
     <div class="left">
-        <button class="adicionar">Editar</button>
+        <button class="adicionar" (click)="editar('/cadastro/cartao')">Editar</button>
     </div>
     <div class="right">
         <div>
-            <app-cartao-item [principal]="true" />
+            <app-cartao-item [cartao]="cartao" />
         </div>
     </div>
 </div>
