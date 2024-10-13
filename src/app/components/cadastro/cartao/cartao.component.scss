@@ -20,37 +20,5 @@ h2{
     }
     .right{
         display: flex;
-
-        >div{
-            width: calc((100% - 10px) / 2);
-        }
-    }
-}
-
-@media (max-width: 1150px){
-    .content{
-        .right{
-            >div{
-                width: 100%;
-            }
-        }
-    }
-}
-@media (max-width: 1000px){
-    .content{
-        .right{
-            >div{
-                width: calc((100% - 10px) / 2);
-            }
-        }
-    }
-}
-@media (max-width: 750px){
-    .content{
-        .right{
-            >div{
-                width: 100%;
-            }
-        }
     }
 }
