@@ -1,0 +1,133 @@
+svg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+
+    #v{
+        animation-name: letter_v;
+    }
+    #i{
+        animation-name: letter_i;
+        animation-delay: 1.6s;
+        animation-duration: .1s;
+    }
+}
+
+div{
+    position: relative;
+    animation-name: fade;
+    animation-duration: .7s;
+
+    >span{
+        display: block;
+        position: absolute;
+        left: 211px;
+        top: 8px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: #25badc;
+        animation-name: circulo;
+        animation-delay: 1s;
+        animation-duration: .8s;
+
+        span{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -50%);
+            background: #3ac1df70;
+            // background: red;
+            border-radius: 50%;
+            animation-duration: .69s;
+            animation-delay: 1s;
+            animation-name: circulo_shadow;
+
+        }
+    }
+}
+
+*{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+@keyframes fade{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+@keyframes letter_v{
+    0%{
+        transform: translate(0,0);
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    70%{
+        transform: translate(-17px, 17px);
+    }
+    85%{
+        transform: translate(-17px, 17px);
+    }
+    90%{
+        transform: translate(-25px, 25px);
+    }
+    100%{ 
+        transform: initial;
+    }
+}
+@keyframes circulo{
+    0%{
+        left: 43px;
+        top: 8px;
+    }
+    25%{
+        left: 105px;
+        top: -8px;
+    }
+    80%{
+        left: 95px;
+        top: -8px;
+    }
+    90%{
+        left: 217px;
+        top: 8px;
+    }
+    95%{
+        left: 207px;
+        top: 8px;
+    }
+    100%{
+        left: 211px;
+        top: 8px;
+    }
+}
+@keyframes circulo_shadow{
+    0%{
+        width: 100%;
+        height: 100%;
+    }
+    50%{
+        width: 300%;
+        height: 300%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+@keyframes letter_i{
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{ 
+        opacity: 1;
+        transform: initial;
+    }
+}
