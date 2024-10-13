@@ -6,6 +6,7 @@ import { CadastroEnderecoComponent } from '../../components/cadastro-endereco/ca
 import { CadastroCartaoComponent } from '../../components/cadastro-cartao/cadastro-cartao.component';
 import { SubmitButtonComponent } from '../../components/formComponents/submit-button/submit-button.component';
 import { LogoComponent } from '../../components/animacoes/logo/logo.component';
+import { Pessoa } from '../../Classes/Pessoa';
 
 @Component({
   selector: 'app-cadastro',
@@ -16,10 +17,9 @@ import { LogoComponent } from '../../components/animacoes/logo/logo.component';
 })
 export class CadastroComponent {
   url: string = '';
+  pessoa: Pessoa = new Pessoa();
 
   constructor(public router: Router ) {
     this.url = router.url;
-    console.log(this.url);
-    
   }
 }

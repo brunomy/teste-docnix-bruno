@@ -5,34 +5,28 @@
     </div>
     <div class="right">
         <div class="half">
-            <app-input [label]="'Nome'" />
+            <app-input [label]="'Nome'" [valor]="pessoa.getNome()" (valorEmitt)="pessoa.setNome($event)"  />
         </div>
         <div class="half">
-            <app-input [label]="'Sobrenome'" />
+            <app-input [label]="'Sobrenome'" [valor]="pessoa.getSobrenome()" (valorEmitt)="pessoa.setSobrenome($event)" />
         </div>
         <div class="half">
-            <app-input [label]="'Data de nascimento'"/>
+            <app-input [label]="'Data de nascimento'" [valor]="pessoa.getDataDeNascimento()" (valorEmitt)="pessoa.setDataDeNascimento($event)" />
         </div>
         <div class="half">
-            <app-input [label]="'Nacionalidade'"/>
+            <app-input [label]="'E-mail'" [valor]="pessoa.getEmail()" (valorEmitt)="pessoa.setEmail($event)"/>
         </div>
         <div class="half">
-            <app-input [label]="'E-mail'"/>
+            <app-input [label]="'Telefone'" [valor]="pessoa.getTelefone()" (valorEmitt)="pessoa.setTelefone($event)" />
         </div>
         <div class="half">
-            <app-input [label]="'Telefone'" />
+            <app-input [label]="'CPF'" [valor]="pessoa.getCPF()" (valorEmitt)="pessoa.setCPF($event)"/>
         </div>
         <div class="half">
-            <app-input [label]="'CPF'"/>
+            <app-input [label]="'Nome da empresa'" [valor]="pessoa.getNomeDaEmpresa()" (valorEmitt)="pessoa.setNomeDaEmpresa($event)"/>
         </div>
         <div class="half">
-            <app-input [label]="'RG'"/>
-        </div>
-        <div class="half">
-            <app-input [label]="'Nome da empresa'"/>
-        </div>
-        <div class="half">
-            <app-select [label]="'Cargo'" />
+            <app-select [label]="'Cargo'" [valor]="pessoa.getCargo()" (valorEmitt)="pessoa.setCargo($event)" />
         </div>
     </div>
 </div>

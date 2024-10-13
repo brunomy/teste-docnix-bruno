@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -9,6 +9,12 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './select.component.scss'
 })
 export class SelectComponent {
-  valor: string = '';
+  @Input() valor: any;
+  @Output() valorEmitt = new EventEmitter<any>();
   @Input() label: string = '';
+
+
+  valorAlterado(){
+    this.valorEmitt.emit(this.valor);
+  }
 }

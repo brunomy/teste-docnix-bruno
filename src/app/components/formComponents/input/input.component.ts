@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { NgIf } from '@angular/common';
 
@@ -10,14 +10,16 @@ import { NgIf } from '@angular/common';
   styleUrl: './input.component.scss'
 })
 export class InputComponent {
-  valor: string = '';
   @Input() label: string = '';
+  @Input() valor: any;
+  @Output() valorEmitt = new EventEmitter<any>();
   invalid: boolean = false;
 
-  validacao(): void {
+  valorAlterado(): void {
+    this.valorEmitt.emit(this.valor);
+
     if(this.label == 'E-mail'){
       this.invalid = this.validarEmail()
-      
     }
   }
 
