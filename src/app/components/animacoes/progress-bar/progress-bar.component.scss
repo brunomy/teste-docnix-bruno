@@ -1,0 +1,100 @@
+.barra {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+
+    .left {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        div {
+            position: absolute;
+            width: 200%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            transition: all 0.8s;
+            transition-delay: 0.8s;
+            border-radius: 50%;
+            overflow: hidden;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0%;
+                width: 50%;
+                height: 100%;
+                background: #E5E5E5;
+
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0%;
+                width: 50%;
+                height: 100%;
+                background: #4b009d;
+            }
+        }
+    }
+    .right {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        div {
+            position: absolute;
+            width: 200%;
+            height: 100%;
+            right: 0;
+            top: 0;
+            transition: all 0.8s;
+            border-radius: 50%;
+            overflow: hidden;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0%;
+                width: 50%;
+                height: 100%;
+                background: #4b009d;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0%;
+                width: 50%;
+                height: 100%;
+                background: #E5E5E5;
+            }
+        }
+    }
+    span {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        font-size: 18px;
+        background: #ffffff;
+        color: #4b009d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 29px;
+    }
+}

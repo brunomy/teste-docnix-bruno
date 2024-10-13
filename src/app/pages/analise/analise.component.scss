@@ -1,0 +1,33 @@
+@import './../../../mixins.scss';
+
+main{
+    @include page_style;
+
+    .right{
+        width: 100% !important;
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 25px;
+            margin-top: 50vh;
+            transform: translateY(-60%);
+            
+            h1{
+                font-size: 25px;
+                color: #4b009d;
+                margin: 0 0 20px;
+            }
+            .progress{
+                margin: 0 0 30px;
+            }
+            p{
+                font-weight: bold;
+                font-size: 15px;
+                color: #4b009d;
+            }
+        }
+    }
+}

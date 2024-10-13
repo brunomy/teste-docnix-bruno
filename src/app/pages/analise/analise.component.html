@@ -1,0 +1,12 @@
+<main>
+    <section class="right">
+        <div class="content">
+            <h1>Análise de crédito</h1>
+            <div class="progress">
+                <app-progress-bar [porcentagem]="porcentagem" />
+            </div>
+            <p *ngIf="porcentagem < 50">A sua análise foi <span>reprovada</span></p>
+            <p *ngIf="porcentagem > 50">A sua análise foi <span>aprovada</span></p>
+        </div>
+    </section>
+</main>
