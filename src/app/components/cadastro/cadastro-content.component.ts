@@ -4,6 +4,7 @@ import { EnderecoComponent } from './endereco/endereco.component';
 import { CartaoComponent } from './cartao/cartao.component';
 import { SubmitButtonComponent } from '../formComponents/submit-button/submit-button.component';
 import { Pessoa } from '../../Classes/Pessoa';
+import { Endereco } from '../../Classes/Endereco';
 
 
 @Component({
@@ -15,6 +16,7 @@ import { Pessoa } from '../../Classes/Pessoa';
 })
 export class CadastroContentComponent {
   @Input() pessoa!: Pessoa;
+  @Input() endereco!: Endereco;
 
   constructor() {
   }

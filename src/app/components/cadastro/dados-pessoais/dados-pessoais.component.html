@@ -1,7 +1,7 @@
 <h2>Dados pessoais:</h2>
 <div class="content">
     <div class="left">
-        <app-img-file />
+        <app-img-file [valor]="pessoa.getFoto()" (valorEmitt)="pessoa.setFoto($event)"/>
     </div>
     <div class="right">
         <div class="half">

@@ -1,11 +1,11 @@
-<div class="end_item" [class.principal]="principal">
+<div class="end_item">
     <div class="info">
-        <p>CEP: <span>74580-340</span></p>
-        <p>Rua: <span>Sp12</span></p>
-        <p>Número: <span>0</span></p>
-        <p>Complemento: <span>Q.09 Lt.09</span></p>
-        <p>Cidade: <span>Goiânia</span></p>
-        <p>Estado: <span>GO</span></p>
+        <p>CEP: <span>{{ endereco.getCEP() }}</span></p>
+        <p>Rua: <span>{{ endereco.getRua() }}</span></p>
+        <p>Número: <span>{{ endereco.getNumero() }}</span></p>
+        <p>Complemento: <span>{{ endereco.getComplemento() }}</span></p>
+        <p>Cidade: <span>{{ endereco.getCidade() }}</span></p>
+        <p>Estado: <span>{{ endereco.getEstado() }}</span></p>
     </div>
 </div>
 

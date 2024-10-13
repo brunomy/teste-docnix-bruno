@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { CadastroComponent } from './pages/cadastro/cadastro.component';
-import { CadastroCartaoComponent } from './components/cadastro-cartao/cadastro-cartao.component';
 import { CadastroFinalizadoComponent } from './pages/cadastro-finalizado/cadastro-finalizado.component';
 import { AnaliseComponent } from './pages/analise/analise.component';
 

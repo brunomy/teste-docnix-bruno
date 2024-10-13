@@ -3,26 +3,26 @@
         <h2>Cadastrar novo endereço:</h2>
         <div class="content">
             <div class="left">
-                <button class="adicionar">Salvar</button>
+                <button routerLink="/cadastro" class="adicionar">Salvar</button>
             </div>
             <div class="right">
                 <div class="half">
-                    <app-input [label]="'CEP'" />
+                    <app-input [label]="'CEP'" [valor]="endereco.getCEP()" (valorEmitt)="endereco.setCEP($event)" />
                 </div>
                 <div class="half">
-                    <app-input [label]="'Rua'" />
+                    <app-input [label]="'Rua'" [valor]="endereco.getRua()" (valorEmitt)="endereco.setRua($event)" />
                 </div>
                 <div class="half">
-                    <app-input [label]="'Número'" />
+                    <app-input [label]="'Número'" [valor]="endereco.getNumero()" (valorEmitt)="endereco.setNumero($event)"  />
                 </div>
                 <div class="half">
-                    <app-input [label]="'Complemento'" />
+                    <app-input [label]="'Complemento'" [valor]="endereco.getComplemento()" (valorEmitt)="endereco.setComplemento($event)"  />
                 </div>
                 <div class="half">
-                    <app-input [label]="'Cidade'" />
+                    <app-input [label]="'Cidade'" [valor]="endereco.getCidade()" (valorEmitt)="endereco.setCidade($event)"  />
                 </div>
                 <div class="half">
-                    <app-input [label]="'Estado'" />
+                    <app-input [label]="'Estado'" [valor]="endereco.getEstado()" (valorEmitt)="endereco.setEstado($event)"  />
                 </div>
             </div>
         </div>

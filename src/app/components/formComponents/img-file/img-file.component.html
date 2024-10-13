@@ -1,4 +1,4 @@
 <div>
-    <input type="file" id="foto" name="foto" (change)="onFileChange($event)" hidden>
+    <input [(ngModel)]="valor" type="file" id="foto" name="foto" (change)="valorAlterado($event)" hidden>
     <label for="foto" [class.cheio]="base64String"><img *ngIf="base64String" [src]="'data:image/png;base64,' + base64String"  alt="" /></label>
 </div>
