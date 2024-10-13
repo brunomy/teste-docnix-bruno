@@ -1,9 +1,9 @@
 <div class="cadastro">
     <div class="content">
         <app-dados-pessoais [pessoa]="pessoa" />
-        <app-endereco [endereco]="endereco" />
+        <app-endereco [endereco]="endereco" [pessoa]="pessoa" />
         <app-cartao />
     </div>
-    <app-submit-button [title]="'Cadastrar'" />
+    <app-submit-button (click)="submit('/cadastro-finalizado')" [title]="'Cadastrar'" />
 </div>
 

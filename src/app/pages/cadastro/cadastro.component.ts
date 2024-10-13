@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CadastroContentComponent } from '../../components/cadastro/cadastro-content.component';
 import { NgIf } from '@angular/common';
 import { Router } from '@angular/router';
@@ -8,6 +8,7 @@ import { SubmitButtonComponent } from '../../components/formComponents/submit-bu
 import { LogoComponent } from '../../components/animacoes/logo/logo.component';
 import { Pessoa } from '../../Classes/Pessoa';
 import { Endereco } from '../../Classes/Endereco';
+import { StorageService } from '../../storage.service';
 
 @Component({
   selector: 'app-cadastro',
@@ -16,12 +17,26 @@ import { Endereco } from '../../Classes/Endereco';
   templateUrl: './cadastro.component.html',
   styleUrl: './cadastro.component.scss'
 })
-export class CadastroComponent {
+export class CadastroComponent implements OnInit {
   url: string = '';
   pessoa: Pessoa = new Pessoa();
   endereco: Endereco = new Endereco();
 
-  constructor(public router: Router) {
+  constructor(public router: Router, private storage: StorageService) {
     this.url = router.url;
+  }
+
+  ngOnInit(): void {
+    if(this.storage.getPessoa()){
+      this.pessoa = this.storage.getPessoa();
+    }
+    else{
+      this.pessoa = new Pessoa();
+    }
+
+    if(this.storage.getEndereco())
+      this.endereco = this.storage.getEndereco();
+    else
+      this.endereco = new Endereco();
   }
 }

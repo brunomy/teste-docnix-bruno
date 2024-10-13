@@ -5,6 +5,8 @@ import { CartaoComponent } from './cartao/cartao.component';
 import { SubmitButtonComponent } from '../formComponents/submit-button/submit-button.component';
 import { Pessoa } from '../../Classes/Pessoa';
 import { Endereco } from '../../Classes/Endereco';
+import { Router } from '@angular/router';
+import { StorageService } from '../../storage.service';
 
 
 @Component({
@@ -18,6 +20,12 @@ export class CadastroContentComponent {
   @Input() pessoa!: Pessoa;
   @Input() endereco!: Endereco;
 
-  constructor() {
+  constructor(private router: Router, private storage: StorageService) {
+  }
+
+  submit(url: string) {
+    this.storage.setPessoa(this.pessoa);
+    this.storage.setEndereco(this.endereco);
+    this.router.navigate([url]);
   }
 }
