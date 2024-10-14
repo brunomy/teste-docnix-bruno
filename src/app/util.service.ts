@@ -51,7 +51,7 @@ export class UtilService {
       .replace(/(\d{2})(\d)/, '$1/$2') // dd/
       .substring(0, 5); // Limita a 10 caracteres
   }
-  public maskCRV(value: string): string {
+  public maskCVC(value: string): string {
     return value
       .replace(/\D/g, '')
       .substring(0, 3);

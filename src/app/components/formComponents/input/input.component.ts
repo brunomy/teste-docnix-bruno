@@ -71,8 +71,8 @@ export class InputComponent {
       else
         this.invalid = false;
     }
-    if(this.label == 'CRV'){
-      this.valor = this.util.maskCRV(this.valor);
+    if(this.label == 'CVC'){
+      this.valor = this.util.maskCVC(this.valor);
       console.log(this.valor.length);
       
       if(this.valor.length < 3)
