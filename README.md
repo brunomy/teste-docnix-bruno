@@ -51,7 +51,7 @@ Antes de começar, certifique-se de ter o Node.js, Angular CLI e o git instalado
    ng serve
    ```
 
-4. A aplicação por padrão irá servir no seguinte path
+4. Link Local da aplicação
 
 A aplicação por padrão irá servir no seguinte path (http://localhost:4200/)
 
