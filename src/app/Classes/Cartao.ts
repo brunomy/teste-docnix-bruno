@@ -4,7 +4,7 @@ export class Cartao {
     private numero: string;
     private nome: string;
     private vencimento: string;
-    private crv: string;
+    private cvc: string;
 
     constructor(
         id: number = 0,
@@ -12,14 +12,14 @@ export class Cartao {
         numero: string = '',
         nome: string = '',
         vencimento: string = '',
-        crv: string = ''
+        cvc: string = ''
     ){
         this.id = id;
         this.id_pessoa = id_pessoa;
         this.numero = numero;
         this.nome = nome;
         this.vencimento = vencimento;
-        this.crv = crv;
+        this.cvc = cvc;
     }
 
     // Set
@@ -32,8 +32,8 @@ export class Cartao {
     setVencimento(vencimento: string) : void {
         this.vencimento = vencimento;
     }
-    setCrv(crv: string) : void {
-        this.crv = crv;
+    setCvc(cvc: string) : void {
+        this.cvc = cvc;
     }
 
     // Get
@@ -49,7 +49,7 @@ export class Cartao {
     getVencimento() : string {
         return this.vencimento;
     }
-    getCrv() : string {
-        return this.crv;
+    getCvc() : string {
+        return this.cvc;
     }
 }
