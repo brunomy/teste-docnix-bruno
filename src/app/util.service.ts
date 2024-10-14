@@ -56,7 +56,12 @@ export class UtilService {
       .replace(/\D/g, '')
       .substring(0, 3);
   }
-
+  public maskNome(value: string): string {
+    console.log(value.length);
+    
+    return value
+      .substring(0, 25);
+  }
 
 
 
@@ -118,4 +123,27 @@ export class UtilService {
 
     return remainder === parseInt(cpf.charAt(10)); // Retorna verdadeiro ou falso
   }
+
+  public identificarBandeiraCartao(cartao: string): string {
+    const bandeiras: { [key: string]: { prefixos: string[]; digitos: number[] } } = {
+        'Visa': { prefixos: ['4'], digitos: [13, 16, 19] },
+        'MasterCard': { prefixos: ['51', '52', '53', '54', '55'], digitos: [16] },
+        'American Express': { prefixos: ['34', '37'], digitos: [15] },
+        'Discover': { prefixos: ['6011', '65'], digitos: [16] },
+        'JCB': { prefixos: ['35'], digitos: [16] },
+        // Adicione mais bandeiras conforme necessário
+    };
+
+    const numero = cartao.replace(/\D/g, ''); // Remove caracteres não numéricos
+
+    for (const [bandeira, { prefixos, digitos }] of Object.entries(bandeiras)) {
+        for (const prefixo of prefixos) {
+            if (numero.startsWith(prefixo) && digitos.includes(numero.length)) {
+                return bandeira;
+            }
+        }
+    }
+
+    return 'Bandeira desconhecida';
+}
 }

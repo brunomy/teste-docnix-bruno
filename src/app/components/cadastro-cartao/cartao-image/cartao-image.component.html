@@ -1,5 +1,5 @@
 <div>
-    <img src="./../../../../assets/cartao.png" alt="">
+    <img src="./../../../../assets/cartao3.png" alt="">
     <div class="numero">
         <span>{{ cartao.getNumero().substring(0, 4) }}</span>
         <span>{{ cartao.getNumero().substring(4, 8) }}</span>
@@ -7,5 +7,5 @@
         <span>{{ cartao.getNumero().substring(12, 16) }}</span>
     </div>
     <div class="vencimento">{{ cartao.getVencimento ()}}</div>
-    <div class="nome">{{ cartao.getNome() }}</div>
+    <div class="nome">{{ util.maskNome(cartao.getNome())  }}</div>
 </div>

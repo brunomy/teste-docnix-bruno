@@ -1,11 +1,37 @@
 <main>
     <section class="left">
         <div class="content">
-    oi
+            <div class="login">
+                <h1>Fazer login</h1>
+                <div class="input">
+                    <app-input [label]="'E-mail'"/>
+                </div>
+                <div class="input">
+                    <app-input [label]="'Senha'"/>
+                </div>
+                <button class="loginBtn" (click)="irParaCadastro()">Login</button>
+                <a class="esqueciSenha">Recuperar a minha senha.</a>
+                <div class="otherLogin">
+                    <button class="google" (click)="irParaCadastro()">
+                        <img src="./../../../assets/svg/google.svg" alt="">
+                        <span>Fazer login com Google</span>
+                    </button>
+                    <button class="facebook" (click)="irParaCadastro()">
+                        <img src="./../../../assets/svg/facebook.svg" alt="">
+                        <span>Fazer login com Facebook</span>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
     <section class="right">
         <div class="content">
+            <div class="img">
+                <app-logo />
+            </div>
+            <h1>Faça o cadastro</h1>
+            <p>Para ter o melhor gerenciamento de sua empresa no mercado</p>
+            <button (click)="irParaCadastro()">Fazer cadastro</button>
         </div>
     </section>
 </main>

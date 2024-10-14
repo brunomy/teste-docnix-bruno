@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { Cartao } from '../../../Classes/Cartao';
+import { UtilService } from '../../../util.service';
 
 @Component({
   selector: 'app-cartao-image',
@@ -10,4 +11,9 @@ import { Cartao } from '../../../Classes/Cartao';
 })
 export class CartaoImageComponent {
   @Input() cartao!: Cartao;
+  bandeira: string = '';
+
+  constructor(public util: UtilService){
+  }
+
 }

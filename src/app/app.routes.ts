@@ -6,7 +6,7 @@ import { AnaliseComponent } from './pages/analise/analise.component';
 
 export const routes: Routes = [
     {
-        path: "login",
+        path: "",
         component: LoginComponent
     },
     {

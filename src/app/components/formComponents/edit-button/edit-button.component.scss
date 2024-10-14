@@ -1,0 +1,16 @@
+button.editar{
+    background: #4b009d;
+    border: none;
+    color: white;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    padding: 11px 16px 11px 0;
+
+    img{
+        width: 17px;
+    }
+}
