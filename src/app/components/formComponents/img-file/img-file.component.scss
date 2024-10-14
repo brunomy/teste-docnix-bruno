@@ -1,3 +1,5 @@
+@import './../../../../variaveis.scss';
+
 div{
     position: relative;
     background: #FFF;
@@ -14,7 +16,7 @@ div{
         transform: translate(-50%, -50%);
         width: calc(100% - 2px);
         height: calc(100% - 2px);
-        border: 5px solid #3ac1df;
+        border: 5px solid $cor1;
         border-radius: 20px;
         pointer-events: none;
         z-index: 1;
@@ -40,7 +42,7 @@ div{
             bottom: 0;
             width: 25px;
             height: 25px;
-            background: #3ac1df;
+            background: $cor1;
             background-image: url(./../../../../assets/svg/Camera.svg);
             background-repeat: no-repeat;
             background-position: center;
@@ -49,7 +51,7 @@ div{
             pointer-events: none;
             transition: all .3s;
         }
-        
+
         img{
             width: 100%;
             height: 100%;

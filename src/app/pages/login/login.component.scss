@@ -15,14 +15,14 @@ main{
 
                 h1{
                     margin: 0 0 10px;
-                    color: #4b009d;
+                    color: $cor2;
                     font-size: 20px;
                 }
                 .input{
                     margin: 0 0 10px;
                 }
                 button.loginBtn{
-                    background: #4b009d;
+                    background: $cor2;
                     color: white;
                     text-decoration: none;
                     width: 100%;
@@ -36,7 +36,7 @@ main{
                     margin: 0 0 10px;
                 }
                 a.esqueciSenha{
-                    color: #4b009d;
+                    color: $cor2;
                     font-size: 13px;
                     font-weight: 600;
                     margin: 0 0 20px;
@@ -92,11 +92,11 @@ main{
             .img{
                 width: 251px;
                 margin: 0 0 15px;
-                
+
             }
             h1{
                 font-size: 24px;
-                color: #4b009d;
+                color: $cor2;
                 margin: 0 0 10px;
             }
             p{
@@ -106,7 +106,7 @@ main{
                 max-width: 300px;
             }
             button{
-                background: #4b009d;
+                background: $cor2;
                 color: white;
                 text-decoration: none;
                 width: 190px;

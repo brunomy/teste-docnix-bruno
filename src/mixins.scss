@@ -1,3 +1,5 @@
+@import './variaveis.scss';
+
 @mixin form_title {
     color: #123a43;
     font-size: 16px;
@@ -16,7 +18,7 @@
         width: 100%;
         border-radius: 5px;
         font-size: 13px;
-        border: 2px solid #3ac1df;
+        border: 2px solid $cor1;
 
         &.invalid{
             border-color: #eb5628 !important;
@@ -51,7 +53,7 @@
         position: absolute;
         pointer-events: none;
         font-size: 10px;
-        background: #3ac1df;
+        background: $cor1;
         color: white;
         font-weight: bold;
         transition: all .1s;

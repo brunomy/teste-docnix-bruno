@@ -26,7 +26,7 @@
 
                     div{
                         width: 100%;
-    
+
                         &.half{
                             width: calc((100% - 10px) / 2);
                         }
@@ -35,7 +35,7 @@
                 .bottom{
                     display: flex;
                     gap: 5px;
-    
+
                     button{
                         border: none;
                         width: 100%;
@@ -43,9 +43,9 @@
                         font-size: 14px;
                         border-radius: 5px;
                         color: white;
-    
+
                         &.adicionar{
-                            background: #4b009d;
+                            background: $cor2;
                         }
                         &.voltar{
                             background: #eb5628;
@@ -103,7 +103,7 @@
         >div{
             h2{
             }
-    
+
             .content{
                 .cartao{
                     img{

@@ -24,7 +24,7 @@
                     color: white;
 
                     &.adicionar{
-                        background: #4b009d;
+                        background: $cor2;
                     }
                     &.voltar{
                         background: #eb5628;
@@ -49,7 +49,7 @@
         >div{
             h2{
             }
-    
+
             .content{
                 .left{
                     width: 100%;

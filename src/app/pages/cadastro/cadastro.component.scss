@@ -4,7 +4,7 @@ main{
     @include page_style;
 
     .left{
-        
+
         .content{
             display: flex;
             flex-direction: column;
@@ -18,11 +18,11 @@ main{
             .img{
                 width: 251px;
                 margin: 0 0 15px;
-                
+
             }
             h1{
                 font-size: 24px;
-                color: #4b009d;
+                color: $cor2;
                 margin: 0 0 10px;
             }
             p{
@@ -31,7 +31,7 @@ main{
                 margin: 0 0 20px;
             }
             a{
-                background: #4b009d;
+                background: $cor2;
                 color: white;
                 text-decoration: none;
                 width: 130px;

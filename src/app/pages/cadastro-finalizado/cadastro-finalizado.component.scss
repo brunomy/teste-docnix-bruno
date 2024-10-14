@@ -12,7 +12,7 @@ main{
             text-align: center;
 
             h1{
-                color: #4b009d;
+                color: $cor2;
                 margin: 0 0 20px;
             }
             .dados{
@@ -30,7 +30,7 @@ main{
             }
             button{
                 border: none;
-                background: #4b009d;
+                background: $cor2;
                 width: 150px;
                 height: 40px;
                 border-radius: 5px;
@@ -57,12 +57,12 @@ main{
                 margin: 0 0 20px;
             }
             h2{
-                color: #3ac1df;
+                color: $cor1;
                 font-size: 25px;
                 margin: 0 0 10px;
             }
             p{
-                color: #3ac1df;
+                color: $cor1;
                 font-size: 17px;
                 font-weight: bold;
             }
@@ -84,7 +84,7 @@ main{
 @media (max-width: 650px){
     main{
         flex-direction: column;
-    
+
         .left{
             order: 2;
             height: auto;
@@ -96,7 +96,7 @@ main{
             .content{
                 h1{
                     font-size: 23px;
-                    
+
                 }
                 .dados{
                     p{

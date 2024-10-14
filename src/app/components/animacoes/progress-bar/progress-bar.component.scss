@@ -1,3 +1,5 @@
+@import './../../../../variaveis.scss';
+
 .barra {
     width: 120px;
     height: 120px;
@@ -40,7 +42,7 @@
                 top: 0%;
                 width: 50%;
                 height: 100%;
-                background: #4b009d;
+                background: $cor2;
             }
         }
     }
@@ -67,7 +69,7 @@
                 top: 0%;
                 width: 50%;
                 height: 100%;
-                background: #4b009d;
+                background: $cor2;
             }
             &:after {
                 content: "";
@@ -86,7 +88,7 @@
         height: 90px;
         font-size: 18px;
         background: #ffffff;
-        color: #4b009d;
+        color: $cor2;
         display: flex;
         justify-content: center;
         align-items: center;
