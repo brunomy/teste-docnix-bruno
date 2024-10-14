@@ -6,7 +6,7 @@ A Aplicação está hospedada no site Vercel na seguinte url (https://teste-docn
 
 ## Sobre o projeto
 
-Este projeto é uma aplicação front-end desenvolvida em Angular 17, que consiste em uma tela de cadastro para coletar dados pessoais, informações de endereço e dados de cartão de crédito. O objetivo deste projeto é demonstrar minhas habilidades como desenvolvedor front-end pleno.
+Este projeto é uma aplicação front-end desenvolvida em Angular 17, que consiste em uma tela de cadastro para coletar dados pessoais, informações de endereço e dados de cartão de crédito. O objetivo deste projeto é demonstrar minhas habilidades como desenvolvedor front-end pleno. Ele foi realizado no tempo de 2 dias, criando todos os componentes do zero.
 
 ## Tecnologias Utilizadas
 
