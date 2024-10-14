@@ -1,5 +1,5 @@
-# Projeto de Cadastro em Angular 17
-
+# Projeto de Cadastro em Angular 17 
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
 ## Deploy
 
 A Aplicação está hospedada no site Vercel na seguinte url (https://teste-docnix-bruno.vercel.app/)
